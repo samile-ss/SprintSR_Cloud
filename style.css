@@ -1,0 +1,100 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 2rem;
+}
+
+h1 {
+  color: #333;
+  
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin: 0 0 0.3rem;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #0f0f0f;
+  color: #e2e2e2;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #a8e6a3;
+  letter-spacing: 0.05em;
+}
+
+#lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card:nth-child(odd) {
+  background: #a8e6a3;
+  color: #1a1a1a;
+}
+
+.card:nth-child(even) {
+  background: #c9a8e6;
+  color: #1a1a1a;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #333;
+}
+
+a.card {
+  text-decoration: none;
+}

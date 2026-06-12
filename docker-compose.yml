@@ -1,0 +1,17 @@
+services:
+  #Nome do servidor
+  painel:
+    build: .
+      # Constrói a imagem usando o Dockerfile. Presente no diretório atual (.)
+    ports:
+     # Mapeamento de portas: Porta 8080 da máquina host PARA a porta 80 do container.
+      - "8080:80"
+
+     #Monta um volume
+    # Diretório local ./data -> diretório /data dentro do container.
+    volumes:
+      - ./data:/data
+
+     # Reinicia automaticamente o container
+     # exceto quando ele for parado manualmente.
+    restart: unless-stopped
